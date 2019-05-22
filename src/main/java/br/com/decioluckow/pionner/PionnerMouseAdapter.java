@@ -1,3 +1,5 @@
+package br.com.decioluckow.pionner;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.function.BiConsumer;

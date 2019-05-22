@@ -1,3 +1,5 @@
+package br.com.decioluckow.pionner;
+
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.util.function.BiConsumer;

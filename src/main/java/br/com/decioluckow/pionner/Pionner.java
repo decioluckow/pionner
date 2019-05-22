@@ -1,3 +1,5 @@
+package br.com.decioluckow.pionner;
+
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.event.MouseEvent;
@@ -26,7 +28,7 @@ public class Pionner extends JFrame {
 		JPanel panel = new JPanel();
 		panel.setLayout(null);
 		ImageIcon icon = new ImageIcon(
-				Paths.get(Pionner.class.getResource("pionner.jpg").toURI()).toFile().getAbsolutePath());
+				Paths.get(Pionner.class.getResource("/pionner.jpg").toURI()).toFile().getAbsolutePath());
 		int width = icon.getIconWidth();
 		int height = icon.getIconHeight();
 		JLabel image = new JLabel(icon);
@@ -93,7 +95,7 @@ public class Pionner extends JFrame {
 		JPanel rollArea = new JPanel();
 		rollArea.setName(name);
 		rollArea.setCursor(new Cursor(Cursor.HAND_CURSOR));
-		rollArea.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 1));
+		//rollArea.setBorder(BorderFactory.createLineBorder(Color.YELLOW, 1));
 		rollArea.setBounds(x, y, w, h);
 		rollArea.addMouseWheelListener(new PionnerMouseWheel(function));
 		rollArea.setOpaque(false);
